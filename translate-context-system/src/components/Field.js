@@ -8,7 +8,7 @@ class Field extends React.Component {
     render() {
         const english = {text: 'Name', placeHolder: 'Search Something'}
         const nepali = {text: 'नाम', placeHolder: 'केहि खोज्नुहोस्'}
-        const text = this.context === 'english'? english : nepali
+        const text = this.context.language === 'english'? english : nepali
         return(
             <div className="ui field">
                 <label>{text.text}</label>
